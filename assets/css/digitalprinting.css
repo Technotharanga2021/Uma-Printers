@@ -71,7 +71,7 @@
 
 .single-work img {
   width: 100%;
-  height: 150%;
+  height: 100%;
   object-fit: contain;  /* ← changed from cover to contain */
   display: block;
   padding: 6px;         /* small inner padding so image doesn't touch edges */
