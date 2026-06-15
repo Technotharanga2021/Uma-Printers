@@ -1674,7 +1674,7 @@ Work Area CSS
 
 
 
-.single-work {
+/*.single-work {
   overflow: hidden;
   position: relative;
   padding: 10px;
@@ -1682,6 +1682,26 @@ Work Area CSS
 
 .single-work img {
   width: 100%;
+}*/
+.single-work {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+  height: 320px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.single-work img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 4px;
 }
 
 .single-work::before {
