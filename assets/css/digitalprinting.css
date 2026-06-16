@@ -46,11 +46,18 @@
   object-fit: cover;                              /* no white bars */
   display: block;
 }
- /* Fix grid alignment and spacing */
+ /* Fix grid alignment and spacing 
 .shorting .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+}*/
+
+.shorting .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
 }
 
 .shorting .col-lg-4 {
@@ -89,3 +96,20 @@
 .shorting .p-0 {
   padding: 8px !important;
 }
+
+.about-areas .section-title {
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+}
+
+.about-areas .about-video {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.about-areas .section-title p {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
