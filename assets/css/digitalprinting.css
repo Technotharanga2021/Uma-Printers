@@ -1,6 +1,6 @@
 .category-card {
   height: 200px;
-  background-color: #cc0066;
+   background: linear-gradient(135deg, #cc0066, #5f37a0);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
