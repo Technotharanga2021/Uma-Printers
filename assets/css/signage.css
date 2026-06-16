@@ -56,10 +56,17 @@ h2 {
     padding: 0 10px;
 }
 
+/*.shorting .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}*/
+
 .shorting .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    justify-content: center;
 }
 
 .col-lg-4.col-md-6.mix {
@@ -231,4 +238,14 @@ h2 {
     .col-lg-4.col-md-6.mix {
         width: 100% !important;
     }
+}
+
+.about-areas .section-title {
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+}
+
+.about-areas .about-video {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
