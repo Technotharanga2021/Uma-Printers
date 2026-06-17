@@ -2478,7 +2478,46 @@ body .our-clients {
   /* no white bars */
   display: block;
 }
-.carousel-item{
+/*.carousel-item{
   width:100%;
   height:10%
+}*/
+#carouselExampleSlidesOnly,
+#carouselExampleControls {
+  max-width: 1100px;
+  margin: 0 auto;
+   padding: 0 40px;
+}
+
+/*#carouselExampleSlidesOnly .carousel-item,
+#carouselExampleControls .carousel-item {
+  width: 100%;
+  height: auto;
+}*/
+#carouselExampleSlidesOnly .carousel-item,
+#carouselExampleControls .carousel-item {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+#carouselExampleSlidesOnly .carousel-item img,
+#carouselExampleControls .carousel-item img {
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#mz-gallery-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
