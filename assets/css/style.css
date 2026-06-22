@@ -493,6 +493,8 @@ Main Header CSS
   color: #0205a8;
   padding-right: 0;
   padding-left: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link.active,
@@ -951,19 +953,30 @@ About Area CSS
 }
 
 .listdigital1 {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
+  display: block !important;
+ background: linear-gradient(135deg, #cc0066, #7b1fa2) !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 10px 25px !important;
+  border-radius: 6px !important;
+  margin: 15px auto !important;
+  box-shadow: 0 4px 12px rgba(204, 0, 102, 0.3) !important;
+  text-align: center !important;
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-.float-start {
-  margin-bottom: 50px;
+
+.listdigital1 span {
+  color: #ffffff !important;
 }
 
-.container .float-start {
-  margin-right: 45px;
+.listdigital1 span b {
+  color: #ffffff !important;
+  font-weight: 600 !important;
 }
-
 /* .services-area .row{
   background-image: url(../img/colorbg1.avif);
   background-size: cover;
@@ -1672,7 +1685,24 @@ Work Area CSS
   background: #ff2c57;
   color: #fff;
 }
+.shorting {
+  max-width: 1140px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
 
+.shorting .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.shorting .col-lg-4 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  margin-bottom: 10px !important;
+}
 
 
 /*.single-work {
@@ -1685,10 +1715,10 @@ Work Area CSS
   width: 100%;
 }*/
 .single-work {
-  overflow: hidden;
+  overflow: visible !important;
   position: relative;
   padding: 10px;
-  height: 320px;
+  height: auto !important;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -1698,11 +1728,9 @@ Work Area CSS
 }
 
 .single-work img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  padding: 4px;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
 }
 
 .single-work::before {
@@ -2026,8 +2054,6 @@ Footer Area CSS
   color: #ffffff;
 }
 
-
-
 #footer {
   background: #0c0c0c;
   padding: 0 0 30px 0;
@@ -2222,8 +2248,6 @@ Go Top CSS
 Team Section
 ==============================
 */
-
-
 .team-members {
   margin: 0;
   padding: 0;
@@ -2448,11 +2472,6 @@ body .our-clients {
 #address {
   color: ghostwhite;
 }
-
-
-
-
-
 #heroCarousel {
   background: #000;
 }
@@ -2560,7 +2579,7 @@ body .our-clients {
   padding-bottom: 0px !important;
 }
 .welcome-area {
-  padding-bottom: 20px !important;
+  padding-bottom: 50px !important;
 }
 
 .about-area {
@@ -2617,52 +2636,6 @@ body .our-clients {
   padding-top: 30px !important;
   margin-top: 20px !important;
 }
-/* Reduce swiper slider size */
-.tranding-slider {
-  height: 350px !important;
-}
-
-.tranding-slide {
-  height: 280px !important;
-  width: 250px !important;
-}
-
-.tranding-slide-img {
-  height: 100px !important;
-  width: 100% !important;
-}
-
-.tranding-slide-img img {
-  width: 100% !important;
-  height: 200% !important;
-  object-fit: cover !important;
-}
-
-
-.tranding-slide-content {
-  padding: 8px !important;
-  text-align: center !important;
-  width: 100% !important;
-}
-
-.tranding-slide-content-bottom {
-  padding: 5px !important;
-  text-align: center !important;
-  width: 100% !important;
-}
-
-.food-name {
-  font-size: 14px !important;
-  margin: 0 auto !important;
-  text-align: center !important;
-  padding-right: 10% !important;
-  display: block !important;
-  width: 300% !important;
-  flex-shrink :0;
-  display : flex;
-  gap : 20
-}
-
 .service-images {
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
@@ -2703,7 +2676,7 @@ body .our-clients {
   margin-bottom: 5px !important;
 }
 #work {
-  padding-top: 30px !important;
+  padding-top: 50px !important;
   margin-top: 20px !important;
 }
 .testimonial {
@@ -2844,6 +2817,151 @@ section.testimonial {
   box-shadow: 0 4px 15px rgba(204, 0, 102, 0.4);
   border: 2px solid #ffffff;
 }
+
+.shorting {
+  width: 1140px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .shorting {
+    width: 960px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .shorting {
+    width: 720px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .shorting {
+    width: 540px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .shorting {
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+}
+
+
+/* Beautiful Section Heading */
+.section-heading-custom {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  margin: 20px 0 !important;
+}
+
+.heading-title {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #cc0066, rgb(95, 55, 160)) !important;
+  padding: 10px 35px !important;
+  border-radius: 30px !important;
+  margin: 0 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 5px 15px rgba(204, 0, 102, 0.3) !important;
+  position: relative !important;
+}
+
+.heading-line {
+  flex: 1 !important;
+  height: 2px !important;
+  background: linear-gradient(to right, transparent, #cc0066) !important;
+  border-radius: 2px !important;
+}
+
+.section-heading-custom .heading-line:last-child {
+  background: linear-gradient(to left, transparent, rgb(95, 55, 160)) !important;
+}
+/* Off Set Printing Button Style Heading */
+.offset-heading {
+  display: inline-block !important;
+  background: linear-gradient(135deg, #cc0066, rgb(95, 55, 160)) !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 10px 25px !important;
+  border-radius: 6px !important;
+  letter-spacing: 1px !important;
+  margin: 15px 0 !important;
+  box-shadow: 0 4px 12px rgba(204, 0, 102, 0.3) !important;
+  cursor: pointer !important;
+  text-align: center !important;
+}
+/* Center and scale carousel items */
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+.owl-carousel .owl-item.active.center {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+/* Ensure equal spacing and smooth overflow */
+.owl-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section-title {
+  background: none !important;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between lines and text */
+}
+
+.bg-f6f6f6 {
+  background: none !important;
+}
+
+
+.tranding-slide-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.food-name {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #333333 !important;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link span {
+  color: #333333 !important;
+}
+
 
 /* ===== New Contact Footer (matches reference design) ===== */
 #footer {
@@ -2992,11 +3110,6 @@ section.testimonial {
   .footer-bottom-inner { flex-direction: column; text-align: center; }
 }
 
-/* ============================================
-   FIX: Off Set Printing gallery (#mz-gallery)
-   Horizontal scrolling row of full, uncropped
-   images on a black background.
-   ============================================ */
 
 #mz-gallery-container {
   background: #000;
@@ -3076,4 +3189,5 @@ section.testimonial {
   #mz-gallery figure {
     height: 160px !important;
   }
+
 }
