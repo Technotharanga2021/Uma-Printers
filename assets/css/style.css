@@ -2618,17 +2618,24 @@ body .our-clients {
   flex-direction: column !important;
   justify-content: center !important;
 }
-
-.about-video {
+/*.about-video {
   height: 100% !important;
 }
+
 
 .about-video img {
   width: 100% !important;
-  height: 100% !important;
+  height: 250px !important;
   object-fit: cover !important;
   border-radius: 8px !important;
+  max-height: 250px !important;
+}*/
+.about-video {
+  height: auto !important;
+  max-height: 450px !important;
+  overflow: hidden !important;
 }
+
 #services {
   padding-top: 0px !important;
   margin-top: 0px !important;
@@ -2636,7 +2643,7 @@ body .our-clients {
 
 .services-area {
   padding-top: 5px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: 200px !important;
   margin-bottom: 0px !important;
 }
 
@@ -3131,7 +3138,7 @@ section.testimonial {
   .footer-flex { flex-direction: column; gap: 35px; }
   .footer-bottom-inner { flex-direction: column; text-align: center; }
 }
-html, body {
+ html,body {
   overflow-x: hidden !important;
   max-width: 100% !important;
 }
@@ -3346,3 +3353,10 @@ html, body {
 .list-1 ul li:hover {
   color: #cc0066 !important;
 }
+
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+
