@@ -3109,4 +3109,8 @@ section.testimonial {
   .footer-flex { flex-direction: column; gap: 35px; }
   .footer-bottom-inner { flex-direction: column; text-align: center; }
 }
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
 
