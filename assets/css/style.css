@@ -2643,7 +2643,7 @@ body .our-clients {
 
 .services-area {
   padding-top: 5px !important;
-  padding-bottom: 200px !important;
+  padding-bottom: 10px !important;
   margin-bottom: 0px !important;
 }
 
@@ -3214,13 +3214,13 @@ section.testimonial {
 /* Responsive */
 @media (max-width: 768px) {
   #mz-gallery figure {
-    height: 220px !important;
+    height: 80px !important;
   }
 }
 
 @media (max-width: 480px) {
   #mz-gallery figure {
-    height: 160px !important;
+    height: 80px !important;
   }
 
 }
@@ -3359,4 +3359,39 @@ html, body {
   max-width: 100% !important;
 }
 
+
+/* Go Top Button */
+.go-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: #cc0066;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(204, 0, 102, 0.4);
+}
+
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top:hover {
+  background: #a3005a;
+  transform: translateY(-3px);
+}
+
+.go-top i {
+  color: #ffffff;
+  font-size: 18px;
+}
 
