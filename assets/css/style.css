@@ -3400,4 +3400,10 @@ html, body {
   max-width: 100% !important;
 }
 
+#footer .footer-bottom-links a {
+  text-decoration: none !important;
+}
 
+#footer .footer-bottom-links a:hover {
+  text-decoration: none !important;
+}
