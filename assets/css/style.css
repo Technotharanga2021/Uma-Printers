@@ -2775,8 +2775,16 @@ section.testimonial {
   flex-wrap: wrap !important;
 }
 
-.shorting .single-work {
+/*.shorting .single-work {
   height: 250px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  margin-bottom: 0px !important;
+  padding: 5px !important;
+}*/
+.shorting .single-work {
+  height: 320px !important;   /* was 250px — taller box = less squishing */
   width: 100% !important;
   overflow: hidden !important;
   border-radius: 8px !important;
@@ -2784,11 +2792,18 @@ section.testimonial {
   padding: 5px !important;
 }
 
-.shorting .single-work img {
+/*.shorting .single-work img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   display: block !important;
+}*/
+.shorting .single-work img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;   /* shows the whole image, no cropping */
+  display: block !important;
+  background-color: #ffffff;        /* fills empty space neatly if aspect ratios differ */
 }
 
 .shorting .col-lg-4 {
