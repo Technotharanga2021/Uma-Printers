@@ -2775,8 +2775,16 @@ section.testimonial {
   flex-wrap: wrap !important;
 }
 
-.shorting .single-work {
+/*.shorting .single-work {
   height: 250px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  margin-bottom: 0px !important;
+  padding: 5px !important;
+}*/
+.shorting .single-work {
+  height: 320px !important;   /* was 250px — taller box = less squishing */
   width: 100% !important;
   overflow: hidden !important;
   border-radius: 8px !important;
@@ -2784,11 +2792,18 @@ section.testimonial {
   padding: 5px !important;
 }
 
-.shorting .single-work img {
+/*.shorting .single-work img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   display: block !important;
+}*/
+.shorting .single-work img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;   /* shows the whole image, no cropping */
+  display: block !important;
+  background-color: #ffffff;        /* fills empty space neatly if aspect ratios differ */
 }
 
 .shorting .col-lg-4 {
@@ -3295,7 +3310,7 @@ section.testimonial {
 }
 
 /* Attractive image styling */
-.about-video {
+/*.about-video {
   position: relative !important;
   border-radius: 12px !important;
   overflow: hidden !important;
@@ -3309,6 +3324,32 @@ section.testimonial {
   object-fit: cover !important;
   border-radius: 12px !important;
   display: block !important;
+}*/
+
+
+.about-video {
+  position: relative !important;
+  display: table !important;
+  margin: 0 auto 30px auto !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 15px 35px rgba(204, 0, 102, 0.45) !important;
+  border: 3px solid #cc0066 !important;
+  padding: 8px !important;
+  box-sizing: border-box !important;
+  background-color: #ffffff !important;
+  max-width: 100% !important;
+}
+
+.about-video img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 380px !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 .about-video .img-overlay {
