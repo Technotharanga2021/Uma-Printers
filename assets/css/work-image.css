@@ -655,7 +655,7 @@
 }
 
 .tranding-slide-content .tranding-slide-content-bottom .food-name {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
   font-size: 12px;
   font-weight: 800;
   color: #ffffff;
