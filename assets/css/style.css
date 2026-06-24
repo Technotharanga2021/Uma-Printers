@@ -1802,12 +1802,12 @@ Work Area CSS
   visibility: visible;
 }
 
-.single-work .work-content {
+/*.single-work .work-content {
   position: absolute;
   bottom: 20px;
   width: 81%;
   background: #ffffff;
-  left: 35px;
+  left: 50px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1820,6 +1820,33 @@ Work Area CSS
 .single-work .work-content h4 {
   font-size: 15px;
   margin-bottom: 10px;
+}*/
+.single-work .work-content {
+  position: absolute !important;
+  bottom: 20px !important;
+  width: 85% !important;
+  background: #ffffff !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  padding: 10px !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.single-work .work-content h4 {
+  font-size: 15px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  text-align: center !important;
+  width: 100% !important;
 }
 
 .single-work .work-content ul li {
@@ -2775,6 +2802,7 @@ section.testimonial {
   color: #ffffff !important;
   margin: 0 auto !important;
 }
+
 .contact-area {
   padding-top: 20px !important;
   margin-top: 20px !important;
